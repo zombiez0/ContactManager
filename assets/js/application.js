@@ -20,6 +20,10 @@ require(["require-config"], function () {
             });
 
             $('.contact-list-view-left').jScrollPane();
+
+            $('.item-row-contact-details-content').on('click', function() {
+                    $('#contact-modal').modal('show');
+            });
           
         }();
 

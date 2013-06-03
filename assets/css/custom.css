@@ -159,10 +159,17 @@ div.contact-details-user-pic{
 	cursor: pointer;
 }
 
-div.default-male{
+div.default-male,div.content-default-male{
 	background: url('../img/male.png') no-repeat;
+}
+
+div.default-male,div.content-default-male,div.default-female,div.content-default-female{
 	width: 66px;
 	height: 62px;
+}
+
+div.default-female,div.content-default-female{
+	background: url('../img/female.png') no-repeat;
 }
 
 li.item-contact-date-item{
@@ -183,4 +190,43 @@ li.item-contact-address{
 h3.new-contact-modal-lbl{
 	color: #3A87AD;
 }
+
+div.contact-content-view{
+	height: 400px;
+}
+
+li.item-row-contact-details-content{
+	height: 100px;
+	margin : 0 0 20px 18px;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+	border: 1px solid #E5E5E5;
+	cursor: pointer;
+}
+
+div.user-img-content-view,div.user-img-content-view-info{
+	margin: 17px 0 0 6px;
+}
+
+li.item-row-contact-details-content:hover{
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .095);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,.095);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .095);
+}
+
+li.user-info-lbl{
+	margin-bottom: 10px;
+}
+
+li.user-info-lbl >span:first-child{
+	width: 60px;
+	display: inline-block;
+}
+
+span.user-info-data{
+	margin-left: 10px;
+}
+
+
 
