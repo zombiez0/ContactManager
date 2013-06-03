@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html land="en">
+
+  <head>
+    <title>BACKBONE Marionette - Contact Manager</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="../assets/css/jquery.jscrollpane.css" rel="stylesheet">
+    <link href="../assets/css/smoothness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+    
+  </head>
+  <body>
+      <header class="navbar navbar-inverse navbar-fixed-top">
+         <div class="navbar-inner">
+                <div class="container clearfix">
+                  <div class="pull-left">
+                    <a class="brand" href="./index.html">Contact Manager</a> 
+                  </div>
+                  <div class="nav-collapse collapse pull-left">
+                    <ul class="nav">
+                      <li class="active">           
+                        <a href="./index.html"><i class="icon-home icon-white header-icon"></i>Home</a>
+                      </li>
+                      <li class="">
+                        <a href="#new-contact-modal" role="button"  data-toggle="modal"><i class="icon-user icon-white header-icon"></i>Add Contact!</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+          </div> 
+      </header>
+      <div class="container">
+          <div class="container menu-wrapper">
+            <div class="pull-left menu-wrapper-wrp">
+                <input class="contact-inp-search" type="search" placeholder="Enter a contact name or number..." />
+                <button class="btn search-contact-btn">
+                    <i class="icon-search"></i>
+                </button>
+            </div>
+            <div class="pull-right">
+                <button class="btn list-type-btn">
+                    <i class="icon-th-list"></i>
+                </button>
+                <button class="btn content-type-btn">
+                    <i class="icon-th"></i>
+                </button>
+            </div>
+          </div>
+          <div class="container wrapper">
+              <div class="row contact-list-view">
+                  <div class="clearfix">
+                      <div class="span4 contact-list-view-left">
+                          <ul class="contact-list-view-left-info">
+                              <li class="contact-list-item"><a href="#">Chetan Anand</a></li>
+                              <li class="contact-list-item"><a href="#">Manoj Kumar</a></li>
+                              <li class="contact-list-item"><a href="#">Resig</a></li>
+                              <li class="contact-list-item"><a href="#">Nitish Kumar</a></li>
+                              <li class="contact-list-item"><a href="#">Aamir Khan</a></li>
+                              <li class="contact-list-item"><a href="#">Nico Rosberg</a></li>
+                              <li class="contact-list-item"><a href="#">Rajiv</a></li>
+                              <li class="contact-list-item"><a href="#">Steve</a></li>
+                              <li class="contact-list-item"><a href="#">Manish Kumar</a></li>
+                              <li class="contact-list-item"><a href="#">Abhishek</a></li>
+                              <li class="contact-list-item"><a href="#">Bill Gates</a></li>
+                              <li class="contact-list-item"><a href="#">Narayan Murthy</a></li>
+                              <li class="contact-list-item"><a href="#">Manohar Joshi</a></li>
+                              <li class="contact-list-item"><a href="#">Rahul Dravid</a></li>
+                              <li class="contact-list-item"><a href="#">Vijay Mallya</a></li>
+                              <li class="contact-list-item"><a href="#">Anantharam</a></li>
+                              <li class="contact-list-item"><a href="#">Derick</a></li>
+                          </ul>
+                      </div>
+                      <div class="span8 contact-list-view-right">
+                          <div class="contact-list-view-rt-dtls">
+                              <div class="contact-list-view-rt-dtls-hdr">                              
+                                  <h3 class="contact-list-hdr1">Contact Details</h3>
+                                  <button type="button" class="btn btn-danger btn-contact-edit"><i class="icon-edit icon-white edit-icon"></i>Edit Contact</button>
+                              </div>
+                              <div class="span5 row-contact-details-left">
+                                  <ul>
+                                      <li class="item-row-contact-details-left">
+                                          <label class="contact-details-left-lbl">Name : </label>
+                                          <input class="contact-details-left-inp" type="text" placeholder="Name.." value="Chetan"/>
+                                      </li>
+                                      <li class="item-row-contact-details-left">
+                                          <label class="contact-details-left-lbl">Phone : </label>
+                                          <input class="contact-details-left-inp" type="text" placeholder="Number.." value="63464"/>
+                                      </li>  
+                                      <li class="item-row-contact-details-left">
+                                           <label class="contact-details-left-lbl">Gender : </label>
+                                           <select class="gender-select">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                           </select>    
+                                      </li>
+                                      <li class="item-row-contact-details-left">
+                                          <label class="contact-details-left-lbl">Email : </label>
+                                          <input class="contact-details-left-inp" type="text" placeholder="Email.." value="hello@gmail.com"/>
+                                      </li>
+                                      <li class="item-row-contact-details-left item-contact-date-item">
+                                          <label class="contact-details-left-lbl">Date of Birth : </label>
+                                          <input id="birth-date-sltr" class="contact-details-left-inp" type="text" placeholder="Date of Birth.." value="04-03-1987"/>
+                                      </li>
+                                      <li class="item-row-contact-details-left">
+                                          <h4 class="contact-list-hdr1">Address</h4>
+                                          <textarea class="contact-address-txtarea" rows="5" placeholder="Address.."></textarea>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="span3 row-contact-details-right">  
+                                  <div class="contact-details-user-pic default-male"></div>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="contact-content-view">
+
+              </div> 
+          </div>
+
+          <!-- Modal -->
+          <div id="new-contact-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="new-contact-label" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                <h3 id="new-contact-label" class="new-contact-modal-lbl">New Contact!</h3>
+              </div>
+              <div class="modal-body">
+                  <form class="form-new-contact-details">
+                      <div class="new-contact-details">
+                            <ul>
+                                <li class="item-row-contact-details-left">
+                                    <label class="contact-details-left-lbl">Name : </label>
+                                    <input class="contact-details-left-inp" type="text"  />
+                                </li>
+                                <li class="item-row-contact-details-left">
+                                    <label class="contact-details-left-lbl">Phone : </label>
+                                    <input class="contact-details-left-inp" type="text"  />
+                                </li>  
+                                <li class="item-row-contact-details-left">
+                                     <label class="contact-details-left-lbl">Gender : </label>
+                                     <select class="gender-select">
+                                          <option>Male</option>
+                                          <option>Female</option>
+                                     </select>    
+                                </li>
+                                <li class="item-row-contact-details-left">
+                                    <label class="contact-details-left-lbl">Email : </label>
+                                    <input class="contact-details-left-inp" type="text"  />
+                                </li>
+                                <li class="item-row-contact-details-left item-contact-address">
+                                    <h4 class="contact-list-hdr1">Address</h4>
+                                    <textarea class="contact-address-txtarea" rows="5" ></textarea>
+                                </li>
+                            </ul>
+                      </div>
+                    </form>
+              </div>
+              <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+              </div>
+          </div>
+      </div>
+
+      
+      
+    
+  </body>
+  <script data-main="../assets/js/application" src="../assets/js/lib/require.js"></script>
+</html>
