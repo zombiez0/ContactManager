@@ -123,7 +123,7 @@ div.row-contact-details-left,div.row-contact-details-right{
 	padding: 20px 0 0 0;
 }
 
-form.form-new-contact-details,div.new-contact-details ul,div.row-contact-details-left ul{
+form.form-new-contact-details,div.new-contact-details ul,div.row-contact-details-left ul,div.user-contact-details-info ul{
 	margin: 0;
 }
 
@@ -189,6 +189,7 @@ li.item-contact-address{
 
 h3.new-contact-modal-lbl{
 	color: #3A87AD;
+	display: inline-block;
 }
 
 div.contact-content-view{
@@ -227,6 +228,21 @@ li.user-info-lbl >span:first-child{
 span.user-info-data{
 	margin-left: 10px;
 }
+
+div.user-contact-details-info{
+	position: relative;
+}
+
+div.content-user-contact-image{
+	position: absolute;
+	top:0;
+	right: 10px;
+	cursor: pointer;
+}
+
+
+
+
 
 
 
