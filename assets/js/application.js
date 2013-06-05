@@ -24,6 +24,8 @@ require(["require-config"], function () {
             $('.item-row-contact-details-content').on('click', function() {
                     $('#contact-modal').modal('show');
             });
+
+            
           
         }();
 

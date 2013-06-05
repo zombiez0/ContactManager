@@ -22,7 +22,7 @@
                         <a href="./index.html"><i class="icon-home icon-white header-icon"></i>Home</a>
                       </li>
                       <li class="">
-                        <a href="#new-contact-modal" role="button"  data-toggle="modal"><i class="icon-user icon-white header-icon"></i>Add Contact!</a>
+                        <a id="new-contact-modal-link" href="#new-contact-modal"  title="Add New Contact's" role="button"  data-toggle="modal"><i class="icon-user icon-white header-icon"></i>Add Contact!</a>
                       </li>
                     </ul>
                   </div>
@@ -74,6 +74,7 @@
                           <div class="contact-list-view-rt-dtls clearfix">
                               <div class="contact-list-view-rt-dtls-hdr">                              
                                   <h3 class="contact-list-hdr1">Contact Details</h3>
+                                  <button type="button" class="btn btn-info btn-contact-delete"><i class="icon-remove icon-white edit-icon"></i>Remove Contact</button>
                                   <button type="button" class="btn btn-danger btn-contact-edit"><i class="icon-edit icon-white edit-icon"></i>Edit Contact</button>
                               </div>
                               <div class="span5 row-contact-details-left">
@@ -115,7 +116,7 @@
                       </div>
                   </div>
               </div>
-             <!--  <div class="contact-content-view">
+              <!-- <div class="contact-content-view">
                     <ul class="row clearfix">
                         <li class="span3 item-row-contact-details-content clearfix">
                               <div class="default-male user-img-content-view pull-left"></div>

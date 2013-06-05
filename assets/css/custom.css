@@ -50,6 +50,7 @@ div.contact-list-view-left{
 
 ul.contact-list-view-left-info{
 	margin:0px !important;
+	width: 300px;
 }
 
 li.contact-list-item{
@@ -111,10 +112,10 @@ div.contact-list-view-rt-dtls-hdr{
 h3.contact-list-hdr1{
 	margin: 0;
 	display: inline-block;
-	margin-right: 293px;
+	margin-right: 122px;
 }
 
-button.btn-contact-edit{
+button.btn-contact-edit,button.btn-contact-delete{
 	margin-top: -12px;
 }
 
@@ -238,6 +239,10 @@ div.content-user-contact-image{
 	top:0;
 	right: 10px;
 	cursor: pointer;
+}
+
+button.btn-contact-delete{
+	margin-right: 15px;
 }
 
 
