@@ -39,7 +39,7 @@ div.menu-wrapper{
 
 div.contact-list-view-left{
 
-	height: 519px;
+	height: 556px;
 	background-color: white;
 	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
 	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
@@ -78,7 +78,7 @@ div.contact-list-view-right{
 	box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
 	border: 1px solid #E5E5E5;
 	margin-left: 18px;
-	height: 518px;
+	height: 555px;
 }
 
 button.list-type-btn{
@@ -221,6 +221,18 @@ li.user-info-lbl{
 	margin-bottom: 10px;
 }
 
+li.user-info-lbl input[type='text']{
+	width: 315px;
+}
+
+li.user-info-lbl input[type='text'], li.user-info-lbl select,li.user-info-lbl textarea{
+	margin-left: 4px;
+}
+
+li.user-info-lbl textarea{
+	margin-bottom: 0;
+}
+
 li.user-info-lbl >span:first-child{
 	width: 60px;
 	display: inline-block;
@@ -245,7 +257,51 @@ button.btn-contact-delete{
 	margin-right: 15px;
 }
 
+div.contact-list-alerts .alert{
+	margin: 10px 0 0 0;
+	padding: 3px 35px 3px 14px;
+}
 
+a.accept-btn,a.cancel-btn {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+}
+
+
+div.delete-alert-msg{
+	line-height: 34px;
+}
+
+a.accept-btn{
+	background: url('../img/accept.png') no-repeat;
+	margin-right: 20px;
+}
+
+a.cancel-btn{
+	background: url('../img/cancel.png') no-repeat;
+}
+
+div.contact-del-btn-group{
+	margin:5px 0 0 50px;
+}
+
+input.text-nonedit,textarea.text-nonedit{
+	color: #333333;
+	border: 0px;
+	box-shadow: none;
+}
+
+input[disabled]{
+	background-color: #fff;
+	border: 0;
+	box-shadow: none;
+	color: #333333;
+}
+
+textarea.text-nonedit{
+	padding-left: 0;
+}
 
 
 

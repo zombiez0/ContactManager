@@ -47,7 +47,7 @@
             </div>
           </div>
           <div class="container wrapper">
-              <div class="row contact-list-view">
+              <!-- <div class="row contact-list-view">
                   <div class="clearfix">
                       <div class="span4 contact-list-view-left">
                           <ul class="contact-list-view-left-info">
@@ -77,34 +77,44 @@
                                   <button type="button" class="btn btn-info btn-contact-delete"><i class="icon-remove icon-white edit-icon"></i>Remove Contact</button>
                                   <button type="button" class="btn btn-danger btn-contact-edit"><i class="icon-edit icon-white edit-icon"></i>Edit Contact</button>
                               </div>
+                              <div class="contact-list-alerts">
+                                  <div class="alert alert-error clearfix">
+                                      <div class="pull-left delete-alert-msg">Are you sure you want to delete the contact ?</div>
+                                      <div class="contact-del-btn-group pull-left">
+                                          <a href="#" title="Yes" class="accept-btn" ></a>
+                                          <a href="#" title="No" class="cancel-btn" ></a>
+                                      </div>
+                                      
+                                  </div>
+                              </div>
                               <div class="span5 row-contact-details-left">
                                   <ul>
                                       <li class="item-row-contact-details-left">
                                           <label class="contact-details-left-lbl">Name : </label>
-                                          <input class="contact-details-left-inp" type="text" placeholder="Name.." value="Chetan"/>
+                                          <input class="contact-details-left-inp text-nonedit" type="text" placeholder="Name.." value="Chetan"/>
                                       </li>
                                       <li class="item-row-contact-details-left">
                                           <label class="contact-details-left-lbl">Phone : </label>
-                                          <input class="contact-details-left-inp" type="text" placeholder="Number.." value="63464"/>
+                                          <input class="contact-details-left-inp text-nonedit" type="text" placeholder="Number.." value="63464"/>
                                       </li>  
                                       <li class="item-row-contact-details-left">
                                            <label class="contact-details-left-lbl">Gender : </label>
-                                           <select class="gender-select">
+                                           <select disabled class="gender-select">
                                                 <option>Male</option>
                                                 <option>Female</option>
                                            </select>    
                                       </li>
                                       <li class="item-row-contact-details-left">
                                           <label class="contact-details-left-lbl">Email : </label>
-                                          <input class="contact-details-left-inp" type="text" placeholder="Email.." value="hello@gmail.com"/>
+                                          <input class="contact-details-left-inp text-nonedit" type="text" placeholder="Email.." value="hello@gmail.com"/>
                                       </li>
                                       <li class="item-row-contact-details-left item-contact-date-item">
                                           <label class="contact-details-left-lbl">Date of Birth : </label>
-                                          <input id="birth-date-sltr" class="contact-details-left-inp" type="text" placeholder="Date of Birth.." value="04-03-1987"/>
+                                          <input id="birth-date-sltr" class="contact-details-left-inp text-nonedit" type="text" placeholder="Date of Birth.." value="04-03-1987"/>
                                       </li>
                                       <li class="item-row-contact-details-left">
                                           <h4 class="contact-list-hdr1">Address</h4>
-                                          <textarea class="contact-address-txtarea" rows="5" placeholder="Address.."></textarea>
+                                          <textarea disabled class="contact-address-txtarea" rows="5" placeholder="Address.."></textarea>
                                       </li>
                                   </ul>
                               </div>
@@ -115,8 +125,8 @@
 
                       </div>
                   </div>
-              </div>
-              <!-- <div class="contact-content-view">
+              </div> -->
+              <div class="contact-content-view">
                     <ul class="row clearfix">
                         <li class="span3 item-row-contact-details-content clearfix">
                               <div class="default-male user-img-content-view pull-left"></div>
@@ -343,7 +353,7 @@
                               </div>
                         </li>
                     </ul>
-              </div>  -->
+              </div> 
           </div>
 
           <!-- Modal -->
@@ -401,27 +411,32 @@
                               <li class="user-info-lbl">
                                   <span>Name</span>
                                   <span>:</span>
-                                  <span class="user-info-data">User 10</span>
+                                  <input disabled class="contact-details-left-inp"  placeholder="Name.." value="Chetan" type="text">
                               </li>
                               <li class="user-info-lbl">
                                   <span>Phone</span>
                                   <span>:</span>
-                                  <span class="user-info-data">9739667753</span>
+                                  <input disabled class="contact-details-left-inp"  placeholder="Contact Number.." value="9739667753" type="text">
+                                  
                               </li>
                               <li class="user-info-lbl">
                                   <span>Gender</span>
                                   <span>:</span>
-                                  <span class="user-info-data">Male</span>
+                                  <select disabled class="gender-select">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                  </select> 
                               </li>
                               <li class="user-info-lbl">
                                   <span>Email</span>
                                   <span>:</span>
-                                  <span class="user-info-data">chetananand.a@gmail.com</span>
+                                  <input disabled class="contact-details-left-inp"  placeholder="Email.." value="chetananand.a@gmail.com" type="text">
                               </li>
                               <li class="user-info-lbl">
                                   <span>Address</span>
                                   <span>:</span>
-                                  <span class="user-info-data">No.67, 4th cross, 7th block, Margosa Road, Bangalore - 5600001 </span>
+                                  <textarea disabled class="contact-address-txtarea" rows="5" placeholder="Address..">No.67, 4th cross, 7th block, Margosa Road, Bangalore - 5600001 </textarea>
+                                  
                               </li>
                               
                         </ul>
