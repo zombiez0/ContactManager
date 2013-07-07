@@ -10,8 +10,18 @@
     
   </head>
   <body>
-      <header class="navbar navbar-inverse navbar-fixed-top">
-         <div class="navbar-inner">
+
+    <!-- Header Region -->
+    <header id="header" class="navbar navbar-inverse navbar-fixed-top"> </header>  
+    <!-- /Header Region -->
+
+    <!-- Wrapper Region -->
+    <div id="wrapper" class="container"></div>  
+    <!-- /Wrapper Region -->
+    
+
+    <!-- Header Template -->
+    <script class="template" type="template" id="header-tmpl">
                 <div class="container clearfix">
                   <div class="pull-left">
                     <a class="brand" href="./index.html">Contact Manager</a> 
@@ -27,106 +37,15 @@
                     </ul>
                   </div>
                 </div>
-          </div> 
-      </header>
-      <div class="container">
-          <div class="container menu-wrapper">
-            <div class="pull-left menu-wrapper-wrp">
-                <input class="contact-inp-search" type="search" placeholder="Enter a contact name or number..." />
-                <button class="btn search-contact-btn">
-                    <i class="icon-search"></i>
-                </button>
-            </div>
-            <div class="pull-right">
-                <button class="btn list-type-btn">
-                    <i class="icon-th-list"></i>
-                </button>
-                <button class="btn content-type-btn">
-                    <i class="icon-th"></i>
-                </button>
-            </div>
-          </div>
-          <div class="container wrapper">
-              <!-- <div class="row contact-list-view">
-                  <div class="clearfix">
-                      <div class="span4 contact-list-view-left">
-                          <ul class="contact-list-view-left-info">
-                              <li class="contact-list-item"><a href="#">John Doe</a></li>
-                              <li class="contact-list-item"><a href="#">Manoj Kumar</a></li>
-                              <li class="contact-list-item"><a href="#">Resig</a></li>
-                              <li class="contact-list-item"><a href="#">Nitish Kumar</a></li>
-                              <li class="contact-list-item"><a href="#">Aamir Khan</a></li>
-                              <li class="contact-list-item"><a href="#">Sanij</a></li>
-                              <li class="contact-list-item"><a href="#">Rajiv</a></li>
-                              <li class="contact-list-item"><a href="#">Steve</a></li>
-                              <li class="contact-list-item"><a href="#">Manish Kumar</a></li>
-                              <li class="contact-list-item"><a href="#">Abhishek</a></li>
-                              <li class="contact-list-item"><a href="#">Bill Gates</a></li>
-                              <li class="contact-list-item"><a href="#">Narayan Murthy</a></li>
-                              <li class="contact-list-item"><a href="#">Manohar Joshi</a></li>
-                              <li class="contact-list-item"><a href="#">Rahul Dravid</a></li>
-                              <li class="contact-list-item"><a href="#">Vijay Mallya</a></li>
-                              <li class="contact-list-item"><a href="#">Anantharam</a></li>
-                              <li class="contact-list-item"><a href="#">Derick</a></li>
-                          </ul>
-                      </div>
-                      <div class="span8 contact-list-view-right">
-                          <div class="contact-list-view-rt-dtls clearfix">
-                              <div class="contact-list-view-rt-dtls-hdr">                              
-                                  <h3 class="contact-list-hdr1">Contact Details</h3>
-                                  <button type="button" class="btn btn-info btn-contact-delete"><i class="icon-remove icon-white edit-icon"></i>Remove Contact</button>
-                                  <button type="button" class="btn btn-danger btn-contact-edit"><i class="icon-edit icon-white edit-icon"></i>Edit Contact</button>
-                              </div>
-                              <div class="contact-list-alerts">
-                                  <div class="alert alert-error clearfix">
-                                      <div class="pull-left delete-alert-msg">Are you sure you want to delete the contact ?</div>
-                                      <div class="contact-del-btn-group pull-left">
-                                          <a href="#" title="Yes" class="accept-btn" ></a>
-                                          <a href="#" title="No" class="cancel-btn" ></a>
-                                      </div>
-                                      
-                                  </div>
-                              </div>
-                              <div class="span5 row-contact-details-left">
-                                  <ul>
-                                      <li class="item-row-contact-details-left">
-                                          <label class="contact-details-left-lbl">Name : </label>
-                                          <input class="contact-details-left-inp text-nonedit" type="text" placeholder="Name.." value="Chetan"/>
-                                      </li>
-                                      <li class="item-row-contact-details-left">
-                                          <label class="contact-details-left-lbl">Phone : </label>
-                                          <input class="contact-details-left-inp text-nonedit" type="text" placeholder="Number.." value="63464"/>
-                                      </li>  
-                                      <li class="item-row-contact-details-left">
-                                           <label class="contact-details-left-lbl">Gender : </label>
-                                           <select disabled class="gender-select">
-                                                <option>Male</option>
-                                                <option>Female</option>
-                                           </select>    
-                                      </li>
-                                      <li class="item-row-contact-details-left">
-                                          <label class="contact-details-left-lbl">Email : </label>
-                                          <input class="contact-details-left-inp text-nonedit" type="text" placeholder="Email.." value="hello@gmail.com"/>
-                                      </li>
-                                      <li class="item-row-contact-details-left item-contact-date-item">
-                                          <label class="contact-details-left-lbl">Date of Birth : </label>
-                                          <input id="birth-date-sltr" class="contact-details-left-inp text-nonedit" type="text" placeholder="Date of Birth.." value="04-03-1987"/>
-                                      </li>
-                                      <li class="item-row-contact-details-left">
-                                          <h4 class="contact-list-hdr1">Address</h4>
-                                          <textarea disabled class="contact-address-txtarea" rows="5" placeholder="Address.."></textarea>
-                                      </li>
-                                  </ul>
-                              </div>
-                              <div class="span3 row-contact-details-right">  
-                                  <div class="contact-details-user-pic default-male"></div>
-                              </div>
-                          </div>
+    </script>       
+    <!-- /Header Template -->
 
-                      </div>
-                  </div>
-              </div> -->
-              <div class="contact-content-view">
+    <!-- Wrapper Template -->
+    <script class="template" type="template" id="wrapper-tmpl">
+          <div id="ctnr-mnu-wrp" class="container menu-wrapper"></div>
+          <div id="ctnr-wrp" class="container wrapper">
+              
+              <!-- <div class="contact-content-view">
                     <ul class="row clearfix">
                         <li class="span3 item-row-contact-details-content clearfix">
                               <div class="default-male user-img-content-view pull-left"></div>
@@ -353,7 +272,7 @@
                               </div>
                         </li>
                     </ul>
-              </div> 
+              </div>  -->
           </div>
 
           <!-- Modal -->
@@ -450,11 +369,102 @@
                 <button class="btn btn-primary">Edit Contact</button>
               </div>
           </div>
-      </div>
+    </script>       
+    <!-- /Wrapper Template -->
 
+    <!-- SearchContact Menu Template -->
+    <script class="template" type="template" id="search-contact-tmpl">
+          <div class="pull-left menu-wrapper-wrp">
+                <input class="contact-inp-search" type="search" placeholder="Enter a contact name or number..." />
+                <button class="btn search-contact-btn">
+                    <i class="icon-search"></i>
+                </button>
+            </div>
+            <div class="pull-right">
+                <button class="btn list-type-btn">
+                    <i class="icon-th-list"></i>
+                </button>
+                <button class="btn content-type-btn">
+                    <i class="icon-th"></i>
+                </button>
+            </div>
+    </script>        
+    <!-- /SearchContact Menu Template -->
+
+
+   <!-- ListView Menu Template -->
+   <script class="template" type="template" id="list-view-tmpl">
+                  <div class="clearfix">
+                      <div id="list-view-left" class="span4 contact-list-view-left"></div>
+                      <div id="list-view-right" class="span8 contact-list-view-right"></div>
+                  </div>
+   </script>                 
+   <!-- /ListView Menu Template -->
+
+   
+   <!-- ListView Menu LeftPanelItem Template -->
+   <script class="template" type="template" id="list-view-item-tmpl">
+        <a href="#">{{name}}</a>
+   </script>     
+   <!-- /ListView Menu LeftPanelItem Template -->
+
+
+   <!-- ListView Menu RightPanel Template -->
+   <script class="template" type="template" id="list-view-right-tmpl">
+        
+                              <div class="contact-list-view-rt-dtls-hdr">                              
+                                  <h3 class="contact-list-hdr1">Contact Details</h3>
+                                  <button type="button" class="btn btn-info btn-contact-delete"><i class="icon-remove icon-white edit-icon"></i>Remove Contact</button>
+                                  <button type="button" class="btn btn-danger btn-contact-edit"><i class="icon-edit icon-white edit-icon"></i>Edit Contact</button>
+                              </div>
+                              <div class="contact-list-alerts">
+                                  <div class="alert alert-error clearfix">
+                                      <div class="pull-left delete-alert-msg">Are you sure you want to delete the contact ?</div>
+                                      <div class="contact-del-btn-group pull-left">
+                                          <a href="#" title="Yes" class="accept-btn" ></a>
+                                          <a href="#" title="No" class="cancel-btn" ></a>
+                                      </div>
+                                      
+                                  </div>
+                              </div>
+                              <div class="span5 row-contact-details-left">
+                                  <ul>
+                                      <li class="item-row-contact-details-left">
+                                          <label class="contact-details-left-lbl">Name : </label>
+                                          <input class="contact-details-left-inp text-nonedit" type="text" placeholder="Name.." value="Chetan"/>
+                                      </li>
+                                      <li class="item-row-contact-details-left">
+                                          <label class="contact-details-left-lbl">Phone : </label>
+                                          <input class="contact-details-left-inp text-nonedit" type="text" placeholder="Number.." value="63464"/>
+                                      </li>  
+                                      <li class="item-row-contact-details-left">
+                                           <label class="contact-details-left-lbl">Gender : </label>
+                                           <select disabled class="gender-select">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                           </select>    
+                                      </li>
+                                      <li class="item-row-contact-details-left">
+                                          <label class="contact-details-left-lbl">Email : </label>
+                                          <input class="contact-details-left-inp text-nonedit" type="text" placeholder="Email.." value="hello@gmail.com"/>
+                                      </li>
+                                      <li class="item-row-contact-details-left item-contact-date-item">
+                                          <label class="contact-details-left-lbl">Date of Birth : </label>
+                                          <input id="birth-date-sltr" class="contact-details-left-inp text-nonedit" type="text" placeholder="Date of Birth.." value="04-03-1987"/>
+                                      </li>
+                                      <li class="item-row-contact-details-left">
+                                          <h4 class="contact-list-hdr1">Address</h4>
+                                          <textarea disabled class="contact-address-txtarea" rows="5" placeholder="Address.."></textarea>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="span3 row-contact-details-right">  
+                                  <div class="contact-details-user-pic default-male"></div>
+                              </div>
+                         
+   </script>                       
+   <!-- /ListView Menu RightPanel Template -->
       
-      
-    
   </body>
   <script data-main="../assets/js/application" src="../assets/js/lib/require.js"></script>
 </html>

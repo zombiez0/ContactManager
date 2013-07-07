@@ -14,6 +14,11 @@ require.config({
 		marionette : 'lib/backbone.marionette.min',
 		mousewheel : 'lib/jquery.mousewheel.min',
 		jScrollPane : 'lib/jquery.jscrollpane.min',
+		applayout : 'layouts',
+		appview : 'views',
+		appcollection : 'collections',
+		appmodel : 'models',
+		approuter : 'router',
 		'backbone.wreqr' : 'lib/backbone.wreqr.min',
 	    'backbone.babysitter' : 'lib/backbone.babysitter.min'
 	},

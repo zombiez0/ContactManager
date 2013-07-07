@@ -1,15 +1,16 @@
-require(["require-config"], function () {
+//require(["require-config"], function () {
 
-    require(["jquery", "underscore", "backbone", "handlebars", "bootstrap", "common"],
+    define(["jquery", "underscore", "backbone", "handlebars", "bootstrap", "common"],
      function ($, _, Backbone, Handlebars, App) {
 
-        var App = null;
+        var App = App || {};
 		App = {
-			Models : {}, Views : {}, Collections : {}, Templates : {}, Router : {}, Objects : {}, Layouts : {}
+			Models : {}, Views : {}, Collections : {}, Templates : {}, Router : {}, Regions : {}, Layouts : {}, MarionetteApp : {}
 		};
 
-		
 
+
+		return App;
     });
 
-})();
+//})();
