@@ -33,7 +33,10 @@ require.config({
 		},
 		'underscore' : {
       		exports : '_'
-    	},		
+    	},
+    	'mousewheel' : {
+			deps : ['jquery']
+		},		
 		'backbone' : {
 			deps : ['underscore'],
 			exports : 'Backbone'

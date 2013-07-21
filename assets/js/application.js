@@ -31,7 +31,7 @@ require(["require-config"], function () {
             
             //Initialize the router  
             App.MarionetteApp.ContactManager.addInitializer(function(options){               
-                new App.Router();         
+                App.Router.AppRouter = new App.Router();         
             });
 
             App.MarionetteApp.ContactManager.on("initialize:after", function(){        
